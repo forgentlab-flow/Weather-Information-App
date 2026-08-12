@@ -1,60 +1,53 @@
 # Weather Information App
 
-## Overview
-
-The Weather Information App is a Java desktop application developed using JavaFX. It connects to the OpenWeatherMap API to retrieve and display current weather information and short-term weather forecasts for a selected city.
-
-The application provides a graphical user interface that allows users to search for weather information, change measurement units, view forecasts, and review recent searches.
+A JavaFX desktop application that retrieves and displays current weather information and short-term forecasts using the OpenWeather API.
 
 ## Features
 
-- Search weather information by city name
-- Retrieve real-time weather information through the OpenWeatherMap API
+- Search weather information by city
 - Display current temperature
+- Display weather description
 - Display feels-like temperature
 - Display humidity
 - Display wind speed
-- Display current weather conditions
-- Display visual weather-condition symbols
-- Display a short-term weather forecast
-- Convert temperature between Celsius and Fahrenheit
-- Convert wind speed between:
-  - Meters per second
-  - Kilometers per hour
-  - Miles per hour
-- Maintain a history of recent weather searches
-- Display timestamps for searches
-- Validate user input
-- Handle invalid cities and API errors
-- Change the application background according to the time of day
+- Display weather icons
+- Display short-term weather forecasts
+- Celsius and Fahrenheit temperature units
+- Meters/second, miles/hour, and kilometers/hour wind units
+- Recent city searches
+- Error handling for invalid cities
+- Error handling for invalid or inactive API keys
+- JavaFX graphical user interface
 
-## Technologies
+## Technologies Used
 
 - Java 25
 - JavaFX 21
-- Maven
+- Maven 3.9.16
 - Gson
-- OpenWeatherMap API
+- OpenWeather API
 - Visual Studio Code
+- Git and GitHub
 
 ## Project Structure
 
 ```text
-WeatherInformationApp/
-│
-├── .gitignore
-├── pom.xml
-├── README.md
-│
-├── src/
-│   └── main/
-│       ├── java/
-│       │   └── com/
-│       │       └── weatherapp/
-│       │           ├── Main.java
-│       │           └── WeatherAPI.java
-│       │
-│       └── resources/
-│           └── images/
-│
-└── target/
+WeatherInformationApp
+|
++-- .gitignore
++-- pom.xml
++-- README.md
+|
++-- src
+|   +-- main
+|       +-- java
+|       |   +-- com
+|       |       +-- weatherapp
+|       |           +-- Main.java
+|       |           +-- WeatherAPI.java
+|       |
+|       +-- resources
+|           +-- images
+|
++-- target
+    +-- Generated automatically by Maven
